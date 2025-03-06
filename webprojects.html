@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b170b98a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .loader-wrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff; /* Background color during loading */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999; /* Ensure it's above other elements */
+ }
+
+ .loader img {
+   width: 100%; /* Adjust size of the preloader image */
+   height: 100%;
+ }
+
+ /* Content hidden initially */
+ #content {
+   display: none;
+ }
+
+ .blinking {
+        padding: 20px;
+        color: #ff4500;
+        font-weight: bold;
+        animation: blink 1s infinite alternate;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+ </style>
+ <script>
+     var css = document.createElement('link');
+     css.rel = 'stylesheet';
+     css.href = 'style.css';
+     document.head.appendChild(css);
+ </script>
+    <title>Web Dev Projects</title>
+</head>
+
+<body id="gotop">
+    <div class="loader-wrapper">
+        <span class="loader">
+          <img src="img/loader.gif" alt="Loading...">
+        </span>
+      </div>
+    <nav>
+         <a href="index.html"><div><img src="img/cplogo.png" alt="" class="logo-size"></div></a>
+        <ul>
+            <li><a href="index.html#about2">About</a></li>
+            <li><a href="index.html#project">Project</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    
+    <div class="breadcrum">
+    <div style="display: flex;justify-content: flex-start;">
+       
+    </div>
+    </div>
+
+    <section>
+        <h1 class="blinking">
+            ❝ Here are some of my live client projects that I have worked on. So far, I have built over 30 websites for clients. Below are some of my best works.❞
+        </h1>
+        <div class="webprojects">
+        <div class="webprojects-box webprojects-box1">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1>Supra Hospital</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://suprahospital.com/" >View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://suprahospital.com/" target="_blank">Live Preview </a></h1>
+        </div>
+
+        <div class="webprojects-box webprojects-box2">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1>Shraddha Trust Care</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://shraddhaeyecaretrust.com/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://shraddhaeyecaretrust.com/" target="_blank">Live Preview</a></h1>
+        </div>
+        
+        
+        <div class="webprojects-box webprojects-box3">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1 class="">Kalpavirusha Hospital</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://kalppavirishahospital.com/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://kalppavirishahospital.com/" target="_blank">Live Preview</a></h1>
+            
+        </div>
+
+        
+        <div class="webprojects-box webprojects-box4">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1>Image Diagnostics</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://imagediagnostics.in/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            
+            <h1><a href="https://imagediagnostics.in/" target="_blank">Live Preview</a></h1>
+        </div>
+        
+        <div class="webprojects-box webprojects-box5">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1> Hope Hospital</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://hopehospital.care/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://hopehospital.care/" target="_blank">Live Preview</a></h1>
+        </div>
+
+        
+        <div class="webprojects-box webprojects-box6">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1> Athreya Hospital</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://athreyahospital.com/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://athreyahospital.com/" target="_blank">Live Preview</a></h1>
+        </div>
+        
+        <div class="webprojects-box webprojects-box7">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1> Srisai Hospital</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://srisaihospitals.in/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://srisaihospitals.in/" target="_blank">Live Preview</a></h1>
+        </div>
+        
+        <div class="webprojects-box webprojects-box8">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1> Lotus Hospital</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://lotusmultispecialitycenter.com">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://lotusmultispecialitycenter.com" target="_blank">Live Preview</a></h1>
+        </div>
+        
+        <div class="webprojects-box webprojects-box9">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1>Abhay vasishtha Hospital</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://abhayvasishthahospitals.com/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://abhayvasishthahospitals.com/" target="_blank">Live Preview</a></h1>
+        </div>
+        
+        <div class="webprojects-box webprojects-box10">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1>Child Central Clinic</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://childcentralclinic.com/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://childcentralclinic.com/" target="_blank">Live Preview</a></h1>
+        </div>
+        
+        <div class="webprojects-box webprojects-box11">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1>Padmashree Diagnostic</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://iqhretail.com/padmashreediagnostic/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://iqhretail.com/padmashreediagnostic/" target="_blank">Live Preview</a></h1>
+        </div> 
+        
+        <div class="webprojects-box webprojects-box12">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1>Sankal Hospital</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://sankalhospital.com">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://sankalhospital.com" target="_blank">Live Preview</a></h1>
+        </div>
+        
+        <div class="webprojects-box webprojects-box13">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1>JayaGuru Charity</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://nssbiratunga.org/index.html">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://nssbiratunga.org/index.html" target="_blank">Live Preview</a></h1>
+        </div>
+        
+        <div class="webprojects-box webprojects-box14">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <h1>Sapthagiri Hospitals</h1>
+            <h1><a href="javascript:void(0)" class="viewDemo" data-link="https://sapthagirihospitals.com/">View Demo <i style="color:#1F5FFF" class="fa-solid fa-eye fa-fade"></i></a></h1>
+            <h1><a href="https://sapthagirihospitals.com/" target="_blank">Live Preview</a></h1>
+        </div>
+
+        <div class="modal1" id="demoModal">
+            <div class="modal1-content">
+                <span class="close-btn" id="closeModal1"><i class="fa-solid fa-x fa-beat-fade"></i></span>
+                <!-- Loading Spinner -->
+                <div class="spinner" id="loadingSpinner"></div>
+                <!-- Iframe -->
+                <iframe src="" id="modalIframe" title="Demo Website"></iframe>
+            </div>
+        </div>
+        
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+        <img src="img/cplogo.png" alt="">
+        </div>
+        <div>
+            <p class="josefin-sans-title">Developed By Chandan Pradhan || All Right Reserved. </p>
+        </div>
+        <div class="arrow">
+            <a href="#gotop"><img src="img/up-arrow.png" alt=""></a>
+            <a href="https://wa.me/917008626741"><img src="img/whatsapp.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle preloader
+    document.addEventListener("DOMContentLoaded", function () {
+      // Set a timeout to remove the preloader after 3 seconds
+      setTimeout(function () {
+        document.querySelector(".loader-wrapper").style.display = "none"; // Hide preloader
+        document.getElementById("content").style.display = "block"; // Show content
+      }, 2000); // 3 seconds
+    });
+    </script>
+    <script>
+        var js = document.createElement('script');
+        js.src = 'myjs.js';
+        document.body.appendChild(js);
+    </script>
+    <script>
+        var js = document.createElement('script');
+        js.src = 'security.js';
+        document.body.appendChild(js);
+    </script>
+</body>
+
+</html>
