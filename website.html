@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b170b98a9.js" crossorigin="anonymous"></script>
+    <style>
+        .loader-wrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff; /* Background color during loading */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999; /* Ensure it's above other elements */
+ }
+
+ .loader img {
+   width: 100%; /* Adjust size of the preloader image */
+   height: 100%;
+ }
+
+ /* Content hidden initially */
+ #content {
+   display: none;
+ }
+
+
+
+ .tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.info-icon {
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.tooltip-box {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 99;
+}
+
+.tooltip-container:hover .tooltip-box {
+  opacity: 1;
+  visibility: visible;
+}
+/* Show on mobile tap via JS */
+.tooltip-container.active .tooltip-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+ </style>
+ <script>
+     var css = document.createElement('link');
+     css.rel = 'stylesheet';
+     css.href = 'style.css';
+     document.head.appendChild(css);
+ </script>
+    <title>Personal Projects</title>
+</head>
+
+<body id="gotop">
+    <div class="loader-wrapper">
+        <span class="loader">
+          <img src="img/loader.gif" alt="Loading...">
+        </span>
+      </div>
+    <nav>
+        <a href="index.html"><div><img src="img/cplogo.png" alt="" class="logo-size"></div></a>
+        <ul>
+            <li><a href="index.html#about2">About</a></li>
+            <li><a href="index.html#project">Project</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    
+    <div class="breadcrum01">
+        <div class="maincrum"> 
+            <h1>Web Development Pricing</h1>
+            <ul class="flex-crum">
+                <li><a class="text-crum" href="index.html">Home</a></li>
+                <li class="text-crum">/</li>
+                <li><a class="text-crum" href="website.html">About</a></li>
+            </ul>
+           </div>
+    <div style="display: flex;justify-content: flex-start;">
+       
+    </div>
+    </div>
+
+    <section id="price-main">
+
+        <div class="price-box box-color1">
+            <h1>Lite</h1>
+            <h2>RS 13,999</h2>
+            <ul class="price-list">
+                <li><i class="fa-regular fa-circle-check"></i> Five Pages <br> (Extra pages will be charged) 
+
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Five pages will be provided: Home, About, Services, Gallery, and Contact. This includes up to 5 pages; additional pages will incur extra charges.</span>
+                    </span>
+                <li>
+                <li><i class="fa-regular fa-circle-check"></i> 
+                Website Content Writing
+                <span class="tooltip-container">
+                    <i class="fa-solid fa-circle-info info-icon"></i>
+                    <span class="tooltip-box">Content writing will be provided for all pages of the website.</span>
+                </span>
+            </li>
+                <li><i class="fa-regular fa-circle-check"></i> Website Images & Videos
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Relevant images and videos will be included throughout the website to enhance visual appeal and engagement.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-xmark"></i> SEO
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Basic SEO optimization will be implemented to improve website visibility on search engines.</span>
+                    </span>
+                </li>
+
+            </ul>
+            <button class="p1-btn"><strong>Get Started</strong></button>
+        </div>
+
+        <div class="price-box box-color1">
+            <h1>Basic</h1>
+            <h2>RS 19,999</h2>
+            <ul class="price-list">
+                <li><i class="fa-regular fa-circle-check"></i> Five Pages <br> (Extra pages will be charged) 
+
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Five pages will be provided: Home, About, Services, Gallery, and Contact. This includes up to 5 pages; additional pages will incur extra charges.</span>
+                    </span>
+                <li>
+                <li><i class="fa-regular fa-circle-check"></i> 
+                Website Content Writing
+                <span class="tooltip-container">
+                    <i class="fa-solid fa-circle-info info-icon"></i>
+                    <span class="tooltip-box">Content writing will be provided for all pages of the website.</span>
+                </span>
+            </li>
+                <li><i class="fa-regular fa-circle-check"></i> Website Images & Videos
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Relevant images and videos will be included throughout the website to enhance visual appeal and engagement.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> SEO
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Basic SEO optimization will be implemented to improve website visibility on search engines.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-xmark"></i> Blogs - 2 Blogs Monthly
+
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">A blog section will be included with 2 new blog posts published every month.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-xmark"></i> Login Admin To Manage Blogs Posting , Gallery Image Upload , Products Uploads
+
+                    
+
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">
+                            Admin Login Panel – Easily manage blog posts, upload gallery images, and add or update products through a secure admin dashboard.
+                        </span>
+                    </span>
+                </li>
+            </ul>
+            <button class="p1-btn"><strong>Get Started</strong></button>
+        </div>
+
+        <div class="price-box box-color2">
+            <h1>Advanced</h1>
+            <h2>RS 29,999</h2>
+            <ul class="price-list">
+                <li><i class="fa-regular fa-circle-check"></i> Five Pages
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Five pages will be provided: Home, About, Services, Gallery, and Contact. This includes up to 5 pages. Additional pages can be added at no extra cost</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> Website Content Writing
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Content writing will be provided for all pages of the website.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> Website Images & Videos
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Relevant images and videos will be included throughout the website to enhance visual appeal and engagement.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> SEO
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Basic SEO optimization will be implemented to improve website visibility on search engines.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> Blogs - 2 Blogs Monthly
+
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">A blog section will be included with 2 new blog posts published every month.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> Login Admin To Manage Blogs Posting , Gallery Image Upload , Products Uploads
+
+                    
+
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">
+                            Admin Login Panel – Easily manage blog posts, upload gallery images, and add or update products through a secure admin dashboard.
+                        </span>
+                    </span>
+                </li>
+            </ul>
+            <button class="p1-btn"><strong>Get Started</strong></button>
+        </div>
+
+        <div class="price-box box-color2">
+            <h1>Premium</h1>
+            <h2>RS 36,999</h2>
+            <ul class="price-list">
+                <li><i class="fa-regular fa-circle-check"></i> Five Pages
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Five pages will be provided: Home, About, Services, Gallery, and Contact. This includes up to 5 pages. Additional pages can be added at no extra cost</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> Website Content Writing
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Content writing will be provided for all pages of the website.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> Website Images & Videos
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Relevant images and videos will be included throughout the website to enhance visual appeal and engagement.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> SEO
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">Basic SEO optimization will be implemented to improve website visibility on search engines.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> Blogs - 2 Blogs Monthly
+
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">A blog section will be included with 2 new blog posts published every month.</span>
+                    </span>
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> Login Admin - custom login panel will be developed based on your requirement
+
+                    
+
+                    <span class="tooltip-container">
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                        <span class="tooltip-box">
+                            Admin Login Panel – Easily manage blog posts, upload gallery images, and add or update products through a secure admin dashboard.
+                        </span>
+                    </span>
+                </li>
+            </ul>
+            <button class="p1-btn"><strong>Get Started</strong></button>
+        </div>
+
+    </section>
+
+    
+
+    <footer class="site-footer">
+        <div class="logo">
+        <img src="img/cplogo.png" alt="">
+        </div>
+        <div>
+            <p class="josefin-sans-title">Developed By Chandan Pradhan || All Right Reserved. </p>
+        </div>
+        <div class="arrow">
+            <a href="#gotop"><img src="img/up-arrow.png" alt=""></a>
+            <a href="https://wa.me/917008626741"><img src="img/whatsapp.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle preloader
+    document.addEventListener("DOMContentLoaded", function () {
+      // Set a timeout to remove the preloader after 3 seconds
+      setTimeout(function () {
+        document.querySelector(".loader-wrapper").style.display = "none"; // Hide preloader
+        document.getElementById("content").style.display = "block"; // Show content
+      }, 2000); // 3 seconds
+    });
+    </script>
+    <script>
+        var js = document.createElement('script');
+        js.src = 'myjs.js';
+        document.body.appendChild(js);
+    </script>
+    <script>
+        var js = document.createElement('script');
+        js.src = 'security.js';
+        document.body.appendChild(js);
+    </script>
+<script>
+    function toggleTooltip(element) {
+      // Close other open tooltips
+      document.querySelectorAll('.tooltip-container').forEach(el => {
+        if (el !== element) el.classList.remove('active');
+      });
+  
+      // Toggle current one
+      element.classList.toggle('active');
+    }
+  
+    // Optional: close tooltip when tapping anywhere else
+    document.addEventListener('click', function(e) {
+      const isTooltip = e.target.closest('.tooltip-container');
+      if (!isTooltip) {
+        document.querySelectorAll('.tooltip-container').forEach(el => el.classList.remove('active'));
+      }
+    });
+  </script>
+  
+</body>
+
+</html>
